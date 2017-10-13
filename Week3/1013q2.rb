@@ -18,7 +18,7 @@ end
 
 def distance(x, y, p, q)
   # 点(x,y)と点(p,q)の間の距離
-  sqrt( (x-p)**2 + (y-q)**2)
+  sqrt( (x-p)**2 + (y-q)**2 )
 end
 
 def sphere(s)
