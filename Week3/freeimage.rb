@@ -6,12 +6,11 @@ def make2d(height, width)
 end
 
 def brightness(s, x, y)
-	(x+y)/(x**2+y**2)
-end
-
-def distance(x, y, p, q)
-  # 点(x,y)と点(p,q)の間の距離
-  sqrt( (x-p)**2 + (y-q)**2 )
+  if y==0
+    [sin(x), sin(y), 0]
+  else
+    [sin(x), sin(y), x/y]
+  end
 end
 
 def myimage(s)
