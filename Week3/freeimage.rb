@@ -28,3 +28,13 @@ public
 end
 
 
+def circle(radius, color)
+	circle = Array.new(radius*2){Array.new(radius*2, [1, 1, 1]}
+	(radius*2).times do |y|
+		(radius*2).times do |x|
+			if (x-radius)**2 + (y-radius)**2 < radius**2 then
+				circle[y][x] = color
+			end
+		end
+	end
+end
