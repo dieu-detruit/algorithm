@@ -21,6 +21,3 @@ def simplesort(a)
   end
   return a
 end
-
-a = [4, 2, 7, 5, 8, 1, 3, 6, 9]
-p simplesort(a)
