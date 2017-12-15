@@ -21,3 +21,7 @@ def simplesort(a)
   end
   return a
 end
+
+def make_gray(n)
+  Array.new(n) { rand(0) }
+end
