@@ -20,6 +20,7 @@ def blur(image)
 			9.times do |k|
 				sum += weight[k] * image[i + di[k]][j + dj[k]]
 			end
+			image[i][j] = sum
 		end
 	end
 end

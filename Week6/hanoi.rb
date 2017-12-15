@@ -44,12 +44,8 @@ class Hanoi
 end
 
 
-3.upto(10) do |i|
-	print("tower of hanoi, the number of disk = ", i, "\n")
-
-	hanoi = Hanoi.new(i)
-	hanoi.solve
-end
+hanoi = Hanoi.new(108)
+hanoi.solve
 
 
 

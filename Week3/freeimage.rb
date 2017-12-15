@@ -27,7 +27,6 @@ public
 
 end
 
-
 def circle(radius, color)
 	circle = Array.new(radius*2){Array.new(radius*2, [1, 1, 1]}
 	(radius*2).times do |y|
@@ -38,3 +37,30 @@ def circle(radius, color)
 		end
 	end
 end
+
+
+
+def main
+	def eyes_top(x)
+		return exp(-x*x/4)
+	end
+
+	def eyes_bottom(x)
+		return -exp(-x*x/4)
+	end
+
+	def eyes_in
+		return circle
+	end
+
+	def eyes_black
+
+	end
+
+
+end
+
+
+main
+
+
