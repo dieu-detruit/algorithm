@@ -21,7 +21,7 @@ end
 
 def maxrow(a, k)
 	return (0..a.length-1).inject(0){|maxindex, i|
-		a[maxindex][k] < a[i][k] ? i : maxindex
+		a[maxindex][k].abs < a[i][k].abs ? i : maxindex
 	}
 end
 
@@ -51,7 +51,7 @@ def gjp(a) # Gauss - Jordan method WITH pivoting
 			end
 		end
 	end
-	a
+	return a
 end
 
 a = [[1.0, -50.0, 3.0, -90.0], [-85.0, 2.0, -25.0, -6.0], [79.0, 5.0, 30.0, -1.0]]
